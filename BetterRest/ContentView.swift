@@ -31,25 +31,16 @@ struct ContentView: View {
         NavigationStack {
             Form {
                 
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("When do you want to wake up?")
-                        .font(.headline)
-                    
+                Section("When do you want to wake up?") {
                     DatePicker("Please enter a time", selection: $wakeUp, displayedComponents: .hourAndMinute)
                         .labelsHidden()
                 }
                 
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("Desired Amount of Sleep")
-                        .font(.headline)
-                    
-                    Stepper("\(sleepAmount.formatted())", value: $sleepAmount, in: 4...12, step: 0.25)
+                Section("Desired Amount of Sleep") {
+                    Stepper("\(sleepAmount.formatted()) Hours", value: $sleepAmount, in: 4...12, step: 0.25)
                 }
                 
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("Daily Coffee Intake")
-                        .font(.headline)
-                    
+                Section("How Many Cups of Coffee Per Day?") {
                     Stepper("^[\(coffeeAmount) cup](inflect:true)", value: $coffeeAmount, in: 0...20)
                 }
                 
@@ -60,14 +51,19 @@ struct ContentView: View {
                     } message: {
                         Text(alertMessage)
                     }
-            }
-            .navigationTitle("Better Rest")
-            .toolbar {
-                Button("Calculate") {
-                    calculateBedtime()
-                    showingBedtime = true
+                
+                Section {
+                    HStack {
+                        Spacer()
+                        Button("Calculate") {
+                            calculateBedtime()
+                            showingBedtime = true
+                        }
+                        Spacer()
+                    }
                 }
             }
+            .navigationTitle("Better Rest")
         }
     }
     
