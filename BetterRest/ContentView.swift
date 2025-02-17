@@ -53,14 +53,7 @@ struct ContentView: View {
                     }
                 
                 Section {
-                    HStack {
-                        Spacer()
-                        Button("Calculate") {
-                            calculateBedtime()
-                            showingBedtime = true
-                        }
-                        Spacer()
-                    }
+                    Text("Recommended Bedtime: \(calculateBedtime())")
                 }
             }
             .navigationTitle("Better Rest")
@@ -75,7 +68,7 @@ struct ContentView: View {
         return (Double)(hoursToSeconds + minutesToSeconds)
     }
     
-    func calculateBedtime() {
+    func calculateBedtime() -> String {
         do {
             let config = MLModelConfiguration()
             let model = try BetterRest(configuration: config)
@@ -87,11 +80,9 @@ struct ContentView: View {
             //subtracts the amount of sleep that the model predicts we should get from the Date object that stores what time we want to wake up; this gives us the time in which we should go to bed
             let sleepTime = wakeUp - prediction.actualSleep
             let sleepTimeString = sleepTime.formatted(date: .omitted, time: .shortened)
-            alertTitle = "Your bedtime:"
-            alertMessage = sleepTimeString
+            return sleepTimeString
         } catch {
-            alertTitle = "Error"
-            alertMessage = "Something went wrong"
+            return "Error"
         }
     }
 }
