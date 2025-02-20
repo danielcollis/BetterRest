@@ -13,23 +13,21 @@ An iOS application that helps with finding the right bedtime for you!
 ![image](https://github.com/user-attachments/assets/a16455ab-d92e-4080-9dcf-71181cbdbb95)
 
 🛠 Installation
-	1.	Clone the repository
+1.	Clone the repository
 
-git clone https://github.com/danielcollis/BetterRest.git
+		git clone https://github.com/danielcollis/BetterRest.git
 
+2.	Open the project in Xcode
 
-	2.	Open the project in Xcode
+		cd BetterRest
+		open BetterRest.xcodeproj
 
-cd BetterRest
-open BetterRest.xcodeproj
+3.	Install dependencies (if using CocoaPods or Swift Package Manager)
 
-
-	3.	Install dependencies (if using CocoaPods or Swift Package Manager)
-
-pod install
+		pod install
 
 or for SPM, just open Xcode and wait for dependencies to resolve.
 
-	4.	Run the app
+4.	Run the app
 	•	Select a simulator or a connected device.
 	•	Press Cmd + R or click Run in Xcode.
