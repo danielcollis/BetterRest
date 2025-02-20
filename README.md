@@ -10,7 +10,7 @@ A brief description of your app (e.g., “An iOS app that helps users track thei
 
 📸 Screenshot
 
-![Simulator Screenshot - iPhone 16 Pro - 2025-02-20 at 09 05 24](https://github.com/user-attachments/assets/353e84b2-434e-47fd-a8b3-9f54ab86fa6e)
+![image](https://github.com/user-attachments/assets/a16455ab-d92e-4080-9dcf-71181cbdbb95)
 
 🛠 Installation
 	1.	Clone the repository
