@@ -1,6 +1,6 @@
 📱 BetterRest
 
-A brief description of your app (e.g., “An iOS app that helps users track their daily habits.”)
+An iOS application that helps with finding the right bedtime for you!
 
 🚀 Features
 
