@@ -14,13 +14,13 @@ A brief description of your app (e.g., “An iOS app that helps users track thei
 🛠 Installation
 	1.	Clone the repository
 
-git clone https://github.com/yourusername/your-repository.git
+git clone https://github.com/danielcollis/BetterRest.git
 
 
 	2.	Open the project in Xcode
 
-cd your-repository
-open YourApp.xcodeproj
+cd BetterRest
+open BetterRest.xcodeproj
 
 
 	3.	Install dependencies (if using CocoaPods or Swift Package Manager)
