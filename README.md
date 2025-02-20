@@ -9,8 +9,8 @@ A brief description of your app (e.g., “An iOS app that helps users track thei
 ✅ ML Trained – Uses a machine learning model trained off of sample data
 
 📸 Screenshot
-		
-![Simulator Screenshot - iPhone 16 Pro - 2025-02-20 at 08 59 07](https://github.com/user-attachments/assets/6b3d3832-e587-479a-88c7-dd0fd9977e27)
+
+![Simulator Screenshot - iPhone 16 Pro - 2025-02-20 at 09 05 24](https://github.com/user-attachments/assets/353e84b2-434e-47fd-a8b3-9f54ab86fa6e)
 
 🛠 Installation
 	1.	Clone the repository
